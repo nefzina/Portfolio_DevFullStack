@@ -15,7 +15,7 @@ export default function Project({project}) {
 
       <div className="overview">
         {!project.image ? (
-          <img src={inProgress} alt="work in progress" />
+          <img src={inProgress} alt="work in progress" className="inProgress"/>
         ) : (
           <img src={project.image} alt={project.title} />
         )}
