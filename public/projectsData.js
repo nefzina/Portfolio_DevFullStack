@@ -2,10 +2,11 @@ export const projects = [
   {
     title: "WeBooK",
     description:
-      "Mettre en relation des personnes possédant des livres qu'elles n'utilisent plus et qui souhaitent les partager avec d'autres amateurs de lecture. L'idée est de créer une communauté solidaire où chaque membre peut échanger des livres gratuitement, favorisant ainsi la diffusion de la culture et de la lecture.",
-
+      "A book exchange platform. Publish a book for exchange. Search a book by title, author or category, etc.",
     tools: [
       "Angular",
+      "Typescript",
+      "Scss",
       "Java",
       "Spring",
       "SpringBoot",
@@ -13,22 +14,21 @@ export const projects = [
       "MySQL",
       "JUnit",
       "Docker",
-      "Scss",
     ],
-    image: "../src/assets/",
+    image: "../src/assets/webook_desktop.png",
   },
 
   {
     title: "Dynamic charts",
-    description: "",
+    description: "Website to manipulate data and graphs with a touch devices. It is a board that allows to select, move and combine data to create graphs",
     tools: ["React", "Node.js", "GraphQL", "prisma", "Scss", "MongoDB"],
     image: "",
   },
 
   {
     title: "COMFHOOD",
-    description: "",
+    description: "An online clothing store, responsive, designed with a clean, user-friendly interface.",
     tools: ["React", "Node.js", "Express.js", "Scss", "MySQL"],
-    image: "",
+    image: "../src/assets/comfhood_iPad_Air.png",
   },
 ];

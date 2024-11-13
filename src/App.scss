@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +12,5 @@ body {
 }
 
 :root {
-  --font: #88a5b7;
-  --primary-blue-background: #001520;
-  --secondary-blue-background: #012532;
-  --header-height: clamp(60px, 7vw, 90px);
-  --orange: #fc7901;
-  --beige: #f2e3d5;
-  --side-gap: clamp(25px, 8vw, 80px);
   width: 100%;
 }

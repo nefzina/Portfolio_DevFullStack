@@ -22,23 +22,32 @@ export default function Description() {
   };
 
   return (
-    <div className="description">
-      <div className="titleWrapper">
-        <p className="firstLine">Hi, my name is</p>
-        <p className="myName">Amani NEFZI</p>
-        <h1 className="title">a Full Stack Web Developer</h1>
+    <div className="descriptionBg">
+      <div className="description">
+        <div className="titleWrapper">
+          <p className="firstLine">Hi, my name is</p>
+          <p className="myName">Amani NEFZI</p>
+          <h1 className="title">a Full Stack Web Developer</h1>
+        </div>
+
+        {/* 
+      status 
+      button my work
+      contact me
+      about me (description + what i know)
+      see my resume
+*/}
+        <p className="myDescription">
+          I recently finished my apprenticeship training and i'm looking forward
+          to start my next project.
+        </p>
+
+        <img
+          src={CV}
+          alt="curriculum vitae icon"
+          onClick={() => window.open(Pdf, "_blank")}
+        />
       </div>
-
-      <p className="myDescription">
-        I recently finished my apprenticeship training and i'm looking forward to start
-        my next project.
-      </p>
-
-      <img
-        src={CV}
-        alt="curriculum vitae icon"
-        onClick={() => window.open(Pdf, "_blank")}
-      />
     </div>
   );
 }
