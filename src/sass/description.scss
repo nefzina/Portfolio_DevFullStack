@@ -1,12 +1,18 @@
+@use "./variables" as v;
+
+
+.descriptionBg {
+  width: 100vw;
+  background-color: v.$primary-blue-background;
+
 .description {
-  padding: 10px var(--side-gap);
+  padding: 10px v.$side-gap;
   font-size: 5rem;
-  color: var(--font);
-  background-color: var(--primary-blue-background);
+  color: v.$font;
   height: 100vh;
   box-sizing: border-box;
-  width: 100vw;
-  margin-top: var(--header-height);
+  max-width: v.$screen-width;
+  margin: v.$header-height auto 0;
 
   .titleWrapper {
     max-height: 250px;
@@ -21,7 +27,7 @@
     .myName {
       font-size: clamp(0.4em, 5vw, 0.5em);
       animation: showText 1s;
-      color: var(--beige);
+      color: v.$beige;
       font-weight: 700;
     }
     .title {
@@ -64,7 +70,7 @@
       margin-top: 55px;
     }
   }
-}
+}}
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
   .description {

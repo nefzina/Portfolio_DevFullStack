@@ -1,28 +1,36 @@
-.projectsContainer {
-  padding: calc(var(--header-height) + 30px) clamp(5px, 3vw, 40px) 0;
-  font-size: 5rem;
-  color: var(--font);
-  background-color: var(--secondary-blue-background);
-  box-sizing: border-box;
-  padding-bottom: 150px;
+@use "./variables" as v;
 
-  .section {
-    font-size: clamp(0.3em, 5vw, 0.4em);
-    margin: 0 0 60px;
-  }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 20px auto 0;
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 10px 0;
-  }
-  @media screen and (min-width: 850px) {
+.projectsBg {
+  width: 100vw;
+  background-color: v.$secondary-blue-background;
+
+  .projectsContainer {
+    padding: calc(v.$header-height + 30px) clamp(5px, 3vw, 40px) 0;
+    font-size: 5rem;
+    color: v.$font;
+    box-sizing: border-box;
+    padding-bottom: 150px;
+    max-width: v.$screen-width;
+    margin: 0 auto;
+    
+    .section {
+      font-size: clamp(0.3em, 5vw, 0.4em);
+      margin: 0 0 60px;
+    }
     .wrapper {
-      flex-direction: row;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px auto 0;
+      flex-wrap: wrap;
+      gap: 100px 50px;
+      padding: 10px 0;
+    }
+    @media screen and (min-width: 850px) {
+      .wrapper {
+        flex-direction: row;
+      }
     }
   }
 }

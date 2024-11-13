@@ -4,6 +4,8 @@ import "../sass/navBar.scss";
 export default function NavBar() {
   return (
     <header>
+      <div className="navBarContainer">
+
       <Link id="logo" to="description" spy smooth duration={500}>
         <span>AMANI</span>NFZ
       </Link>
@@ -20,6 +22,7 @@ export default function NavBar() {
         <i className="burgerBar middleBar" />
         <i className="burgerBar" />
       </button>
+      </div>
     </header>
   );
 }
