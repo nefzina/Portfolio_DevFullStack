@@ -15,7 +15,7 @@ export const projects = [
       "JUnit",
       "Docker",
     ],
-    image: "../src/assets/webook_desktop.png",
+    image: "/src/assets/webook_desktop.png",
   },
 
   {
@@ -29,6 +29,6 @@ export const projects = [
     title: "COMFHOOD",
     description: "An online clothing store, responsive, designed with a clean, user-friendly interface.",
     tools: ["React", "Node.js", "Express.js", "Scss", "MySQL"],
-    image: "../src/assets/comfhood_iPad_Air.png",
+    image: "/src/assets/comfhood_iPad_Air.png",
   },
 ];
