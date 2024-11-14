@@ -1,4 +1,4 @@
-import { projects } from "../../public/projectsData";
+import { projects } from "../data/projectsData";
 import Project from "./Project";
 import "../sass/projectsSection.scss";
 export default function ProjectsSection() {
