@@ -16,9 +16,8 @@
     justify-content: flex-start;
     gap: 60px;
     flex-wrap: wrap;
-    margin: 0 auto 150px auto ;
+    margin: 0 auto 150px auto;
     max-width: v.$screen-width;
-    
 
     h2 {
       font-size: clamp(2rem, 8vw, 2.3rem);
@@ -46,8 +45,9 @@
         border: none;
         font-size: 0.2em;
         transition: 0.3s;
-        height: fit-content;
+        height: 45px;
         border: 1px solid v.$orange;
+        padding: 8px;
 
         a {
           color: v.$primary-blue-background;
@@ -56,8 +56,10 @@
           justify-content: center;
           gap: 15px;
           text-align: center;
+          text-decoration: none;
+          font-weight: 500;
 
-          svg{
+          svg {
             height: fit-content;
           }
         }
@@ -65,9 +67,8 @@
           background-color: rgba(0, 0, 0, 0.562);
           a {
             color: v.$font;
-            svg {
-            fill: v.$font;
-
+            svg #Icon-Set {
+              fill: v.$font;
             }
           }
         }
@@ -84,7 +85,12 @@
         svg:hover {
           fill: v.$orange;
           width: 100%;
+          #github{
+            stroke: v.$orange;
+            fill: none;
+          }
         }
+
       }
     }
   }
