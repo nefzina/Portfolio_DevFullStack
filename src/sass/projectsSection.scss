@@ -1,7 +1,8 @@
 @use "./variables" as v;
 
 .projectsBg {
-  width: 100vw;
+  box-sizing: border-box;
+  width: 100%;
   background-color: v.$secondary-blue-background;
 
   .projectsContainer {

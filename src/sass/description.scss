@@ -2,7 +2,8 @@
 
 
 .descriptionBg {
-  width: 100vw;
+  box-sizing: border-box;
+  width: 100%;
   background-color: v.$primary-blue-background;
 
 .description {
@@ -10,7 +11,6 @@
   font-size: 5rem;
   color: v.$font;
   height: 100vh;
-  box-sizing: border-box;
   max-width: v.$screen-width;
   margin: v.$header-height auto 0;
 

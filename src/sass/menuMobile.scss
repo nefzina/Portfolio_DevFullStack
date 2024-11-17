@@ -1,0 +1,94 @@
+@use "./variables" as v;
+
+.CustomMenuIntroduction--listbox {
+  box-sizing: border-box;
+  padding: 6px;
+  margin: 20px 10px;
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: auto;
+  outline: 0;
+
+  .closed & {
+    opacity: 0;
+    transform: scale(0.95, 0.8);
+    transition: opacity 200ms ease-in, transform 200ms ease-in;
+  }
+
+  .open & {
+    background-color: v.$font;
+    color: v.$primary-blue-background;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: opacity 100ms ease-out,
+      transform 100ms cubic-bezier(0.43, 0.29, 0.37, 1.48);
+  }
+
+  .placement-top & {
+    transform-origin: bottom;
+  }
+
+  .placement-bottom & {
+    transform-origin: top;
+  }
+
+  .CustomMenuIntroduction--item {
+    list-style: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: default;
+    user-select: none;
+  }
+
+  .CustomMenuIntroduction--item:last-of-type {
+    border-bottom: none;
+  }
+
+  .CustomMenuIntroduction--item:focus {
+    background-color: v.$secondary-blue-background;
+    color: v.$beige;
+  }
+}
+
+.TriggerButtonIntroduction {
+  transition: all 150ms ease;
+  cursor: pointer;
+  color: #c7d0dd;
+  width: 40px;
+  padding: 5px;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background: v.$secondary-blue-background;
+  }
+
+  &:active {
+    background-color: v.$font;
+    svg {
+      stroke: v.$primary-blue-background;
+    }
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px v.$font;
+    outline: none;
+  }
+
+  svg {
+    stroke: v.$font;
+  }
+
+  @media screen and (min-width: 470px) {
+    display: none;
+  }
+}
+
+.CustomMenuIntroduction {
+  z-index: 1;
+}

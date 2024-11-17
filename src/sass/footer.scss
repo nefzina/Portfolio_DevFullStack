@@ -8,7 +8,8 @@
   height: fit-content; //calc(100vh - v.$header-height));
   box-sizing: border-box;
   position: relative;
-  // width: 100vw;
+  box-sizing: border-box;
+  width: 100%;
 
   .flex-container {
     display: flex;
