@@ -64,6 +64,7 @@ export default function Footer() {
               fill="none"
             >
               <path
+              id="github"
                 stroke="#88a5b7"
                 strokeLinecap="round"
                 strokeLinejoin="round"
