@@ -34,7 +34,7 @@ export default function Description() {
       status 
       button my work
       contact me
-      about me (description + what i know)
+      about me ( what i know)
       see my resume
 */}
         <p className="myDescription">

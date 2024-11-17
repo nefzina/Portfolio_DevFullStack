@@ -15,7 +15,7 @@ export const projects = [
       "JUnit",
       "Docker",
     ],
-    image: "../src/assets/webook_desktop.png",
+    image: "../assets/webook_desktop.png",
   },
 
   {

@@ -1,25 +1,23 @@
 @use "./variables" as v;
 
 header {
-  box-sizing: border-box;
   position: fixed;
   top: 0;
-  left: 0;
   background-color: v.$primary-blue-background;
   height: v.$header-height;
-  width: 100vw;
+  width: 100%;
   z-index: 2;
   box-shadow: 0 2px 2px 2px #88a5b7a9;
   display: grid;
   place-items: center center;
-
+  padding: 0 20px;
+  
   .navBarContainer {
     width: 100%;
     max-width: v.$screen-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px 0 15px;
 
     #logo {
       color: v.$font;
@@ -35,7 +33,7 @@ header {
 
       .navLink {
         color: v.$font;
-        font-size: clamp(0.7rem, 1.2vw, 1.3rem);
+        font-size: clamp(0.8rem, 2.3vw, 1.1rem);
         font-weight: 500;
         letter-spacing: 1px;
         height: 100%;
@@ -45,10 +43,11 @@ header {
 
     @media screen and (min-width: 470px) {
       nav {
-        width: clamp(130px, 15vw, 250px);
+        width: fit-content;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 50px;
       }
     }
     .burgerMenu {
