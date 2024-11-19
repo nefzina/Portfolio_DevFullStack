@@ -6,7 +6,6 @@ import { MenuButton } from "@mui/base/MenuButton";
 import { Dropdown } from "@mui/base/Dropdown";
 import { CssTransition } from "@mui/base/Transitions";
 import { PopupContext } from "@mui/base/Unstable_Popup";
-import menu from "../assets/menu.png";
 import { Link } from "react-scroll";
 import "../sass/menuMobile.scss";
 
@@ -48,7 +47,7 @@ export default function MenuMobile() {
         >
           <MenuItem className="CustomMenuIntroduction--item">Projects</MenuItem>
         </Link>
-        <MenuItem className="CustomMenuIntroduction--item">About me</MenuItem>
+        <MenuItem className="CustomMenuIntroduction--item">Skills</MenuItem>
         <Link className="navLink" to="footer" spy smooth duration={1000}>
           <MenuItem className="CustomMenuIntroduction--item">Contact</MenuItem>
         </Link>

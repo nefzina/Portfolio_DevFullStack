@@ -82,15 +82,16 @@
         height: fit-content;
         background-color: rgba(0, 0, 0, 0.562);
 
-        svg:hover {
-          fill: v.$orange;
-          width: 100%;
-          #github{
-            stroke: v.$orange;
-            fill: none;
+        &:hover {
+          svg {
+            fill: v.$orange;
+            width: 100%;
+            #github {
+              stroke: v.$orange;
+              fill: none;
+            }
           }
         }
-
       }
     }
   }
