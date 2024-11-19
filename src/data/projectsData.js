@@ -15,20 +15,20 @@ export const projects = [
       "JUnit",
       "Docker",
     ],
-    image: "../assets/webook_desktop.png",
+    imgName: "webook_desktop.png",
   },
 
   {
     title: "Dynamic charts",
     description: "Website to manipulate data and graphs with a touch devices. It is a board that allows to select, move and combine data to create graphs",
     tools: ["React", "Node.js", "GraphQL", "prisma", "Scss", "MongoDB"],
-    image: "",
+    imgName: "",
   },
 
   {
     title: "COMFHOOD",
     description: "An online clothing store, responsive, designed with a clean, user-friendly interface.",
     tools: ["React", "Node.js", "Express.js", "Scss", "MySQL"],
-    image: "/src/assets/comfhood_iPad_Air.png",
+    imgName: "comfhood_iPad_Air.png",
   },
 ];

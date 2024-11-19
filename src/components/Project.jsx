@@ -14,10 +14,10 @@ export default function Project({project}) {
       </div>
 
       <div className="overview">
-        {!project.image ? (
+        {!project.imgName ? (
           <img src={inProgress} alt="work in progress" className="inProgress"/>
         ) : (
-          <img src={project.image} alt={project.title} />
+          <img src={`../src/assets/${project.imgName}`} alt={project.title} />
         )}
       </div>
     </div>
