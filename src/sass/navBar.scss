@@ -23,6 +23,7 @@ header {
       color: v.$font;
       font-size: clamp(1.2em, 2vw, 1.9em);
       cursor: pointer;
+
       span {
         color: v.$orange;
       }
@@ -38,6 +39,7 @@ header {
         letter-spacing: 1px;
         height: 100%;
         cursor: pointer;
+
       }
     }
 
