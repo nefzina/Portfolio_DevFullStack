@@ -18,7 +18,7 @@ export default function Project({project}) {
         {!project.imgName ? (
           <img src={inProgress} alt="work in progress" className="inProgress"/>
         ) : (
-          <img src={`../../public/assets/${project.imgName}`} alt={project.title} />
+          <img src={`/assets/${project.imgName}`} alt={project.title} />
         )}
       </div>
     </div>

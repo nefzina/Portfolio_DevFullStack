@@ -1,7 +1,7 @@
-import Pdf from "../../public/assets/AmaniNEFZI_Dev_FullStack_2024.pdf";
-import "../sass/description.scss";
 import { Link } from "react-scroll";
+import Pdf from "../../public/assets/AmaniNEFZI_Dev_FullStack_2024.pdf";
 import profilePic from "../../public/assets/pic2.png";
+import "../sass/description.scss";
 
 export default function Description() {
   const tools = {
