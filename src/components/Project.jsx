@@ -1,7 +1,8 @@
-import inProgress from "../assets/work-in-progress.png";
+import inProgress from "../../public/assets/work-in-progress.png";
 import "../sass/project.scss";
 
 export default function Project({project}) {
+
   return (
     <div className="project">
       <div className="details">
@@ -17,7 +18,7 @@ export default function Project({project}) {
         {!project.imgName ? (
           <img src={inProgress} alt="work in progress" className="inProgress"/>
         ) : (
-          <img src={`../src/assets/${project.imgName}`} alt={project.title} />
+          <img src={`../../public/assets/${project.imgName}`} alt={project.title} />
         )}
       </div>
     </div>
