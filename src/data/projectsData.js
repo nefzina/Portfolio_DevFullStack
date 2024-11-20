@@ -22,7 +22,7 @@ export const projects = [
     title: "Dynamic charts",
     description: "Website to manipulate data and graphs with a touch devices. It is a board that allows to select, move and combine data to create graphs",
     tools: ["React", "Node.js", "GraphQL", "prisma", "Scss", "MongoDB"],
-    imgName: "",
+    imgName: "dynamic_charts.png",
   },
 
   {
