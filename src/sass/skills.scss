@@ -1,0 +1,150 @@
+@use "./variables" as v;
+
+.skills-bg {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: v.$primary-blue-background;
+  padding: 40px 20px 100px;
+
+  .skills-container {
+    padding: 10px v.$side-gap;
+    font-size: 1.2rem;
+    color: v.$font;
+    width: 100%;
+    max-width: v.$screen-width;
+    min-height: 600px;
+    margin: v.$header-height auto 0;
+    border-radius: 20px;
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: clamp(30px, 6vw, 70px);
+      align-items: center;
+      width: 100%;
+      margin: 10px auto;
+
+      @media screen and (min-width: 700px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* From Uiverse.io by joe-watson-sbf */
+      .flip-card {
+        background-color: transparent;
+        width: 100%;
+        max-width: 250px;
+        height: 280px;
+        perspective: 1000px;
+        font-family: sans-serif;
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.8s;
+          transform-style: preserve-3d;
+          text-align: left;
+
+          .title {
+            font-size: 1em;
+            font-weight: 900;
+            text-align: left;
+            margin: 15px 0;
+          }
+
+          .flip-card-front,
+          .flip-card-back {
+            box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 1rem;
+            padding: 0 30px;
+
+            ul {
+              list-style: none;
+              margin-left: 30px;
+            }
+          }
+
+          .flip-card-front {
+            background: v.$secondary-blue-background;
+            box-shadow: 2px 8px 26px 0 #2180bb;
+            backdrop-filter: blur(9.5px);
+            -webkit-backdrop-filter: blur(9.5px);
+            border-radius: 10px;
+            border: 3px solid v.$font;
+            color: v.$beige;
+          }
+
+          .flip-card-back {
+            background: #000e16ab;
+            box-shadow: 0 8px 32px 0 rgba(196, 114, 59, 0.37);
+            backdrop-filter: blur(9.5px);
+            -webkit-backdrop-filter: blur(9.5px);
+            border-radius: 10px;
+            border: 3px solid v.$orange;
+            color: v.$orange;
+            transform: rotateY(180deg);
+
+            .send {
+              background-color: v.$orange;
+              border: none;
+              font-size: 1.2rem;
+              transition: 0.3s;
+              height: 45px;
+              border: 1px solid v.$orange;
+              padding: 8px;
+              margin-top: 20px;
+
+              a {
+                color: v.$primary-blue-background;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 500;
+
+                p {
+                  line-height: 17px;
+                  font-family: Inter, system-ui, Avenir, Helvetica, Arial,
+                    sans-serif;
+                  display: inline-block;
+                }
+                svg {
+                  height: fit-content;
+                }
+              }
+              &:hover {
+                background-color: rgba(0, 0, 0, 0.562);
+                a {
+                  color: v.$font;
+                  svg #Icon-Set {
+                    fill: v.$font;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        &:last-child .flip-card-inner .flip-card-back p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

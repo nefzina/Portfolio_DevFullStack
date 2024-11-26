@@ -17,7 +17,16 @@ export default function NavBar() {
             smooth
             duration={500}
           >
-            Projects
+            Work
+          </Link>
+          <Link
+            className="navLink"
+            to="skills-bg"
+            spy
+            smooth
+            duration={500}
+          >
+            Skills
           </Link>
           <Link className="navLink" to="footer" spy smooth duration={1000}>
             Contact

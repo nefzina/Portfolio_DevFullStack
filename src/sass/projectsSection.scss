@@ -14,10 +14,7 @@
     max-width: v.$screen-width;
     margin: 0 auto;
     
-    .section {
-      font-size: clamp(0.3em, 5vw, 0.4em);
-      margin: 0 0 60px;
-    }
+    
     .wrapper {
       display: flex;
       flex-direction: column;

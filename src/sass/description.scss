@@ -93,17 +93,12 @@
 
         svg {
           position: absolute;
-          bottom: 0;
-          // transform: scaleY(-1);
-
-          path {
-            fill: transparent;
-          }
+          bottom: -40px;
+          left: calc(50% - 100px);
 
           text {
             fill: v.$orange;
-            font-size: 2.2rem;
-            letter-spacing: 1.5px;
+            font-size: 1.5rem;
           }
         }
       }
@@ -124,16 +119,20 @@
         .workBtn,
         .skillsBtn,
         .resumeBtn {
-          background-color: v.$orange;
-          border: none;
           width: 60px;
           height: 60px;
           border-radius: 50%;
           display: grid;
           place-content: center;
+          background: #000e16ab;
+          box-shadow: 0 8px 32px 0 rgba(196, 114, 59, 0.37);
+          backdrop-filter: blur(9.5px);
+          -webkit-backdrop-filter: blur(9.5px);
+          border: 3px solid v.$orange;
 
           &:hover {
-            background-color: v.$font;
+            border: 3px solid v.$font;
+            box-shadow: 2px 8px 26px 0 #2180bb;
           }
         }
 
@@ -145,7 +144,7 @@
         .workBtn {
           margin-right: 10px;
           svg {
-            stroke: v.$primary-blue-background;
+            stroke: v.$orange;
           }
         }
         .skillsBtn {
@@ -153,9 +152,11 @@
         }
 
         .skillsBtn,
-        .resumeBtn {
-          svg {
-            fill: v.$primary-blue-background;
+        .resumeBtn,
+        .contactBtn {
+          svg,
+          #Icon-Set {
+            fill: v.$orange;
           }
         }
 
@@ -163,6 +164,21 @@
           svg polygon,
           rect {
             fill: transparent;
+          }
+        }
+        .workBtn:hover {
+          margin-right: 10px;
+          svg {
+            stroke: v.$beige;
+          }
+        }
+
+        .skillsBtn:hover,
+        .resumeBtn:hover,
+        .contactBtn:hover {
+          svg,
+          #Icon-Set {
+            fill: v.$beige;
           }
         }
       }
@@ -204,6 +220,10 @@
         align-self: center;
         margin-top: 80px;
       }
+    }
+
+    @media screen and (min-height: 900px) {
+      min-height: 90vh;
     }
   }
 }
