@@ -36,7 +36,7 @@ export default function MenuMobile() {
           smooth
           duration={500}
         >
-          <MenuItem className="CustomMenuIntroduction--item">Description</MenuItem>
+          <MenuItem className="CustomMenuIntroduction--item">Profile</MenuItem>
         </Link>
         <Link
           className="navLink"
@@ -45,7 +45,7 @@ export default function MenuMobile() {
           smooth
           duration={500}
         >
-          <MenuItem className="CustomMenuIntroduction--item">Projects</MenuItem>
+          <MenuItem className="CustomMenuIntroduction--item">Work</MenuItem>
         </Link>
         <MenuItem className="CustomMenuIntroduction--item">Skills</MenuItem>
         <Link className="navLink" to="footer" spy smooth duration={1000}>
