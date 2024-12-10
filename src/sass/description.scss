@@ -5,6 +5,14 @@
   width: 100%;
   background-color: v.$primary-blue-background;
 
+  #tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
   .description {
     padding: 10px v.$side-gap;
     font-size: 5rem;
@@ -114,6 +122,7 @@
         opacity: 0;
         transition: 0.5s;
         animation: fadeOut 3s forwards;
+        z-index: 2;
 
         .contactBtn,
         .workBtn,
