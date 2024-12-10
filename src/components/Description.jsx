@@ -104,7 +104,7 @@ export default function Description() {
             <button title="My skills" className="skillsBtn">
               <Link
                 className="navLink"
-                to="skills-bg"
+                to="projectsContainer"
                 spy
                 smooth
                 duration={500}
