@@ -17,6 +17,7 @@ export default function Skills() {
                     <li>{element}</li>
                   ))}
                 </ul>
+                <div className="flip">Flip</div>
               </div>
               <div class="flip-card-back">
                 <p class="title">Backend</p>
@@ -44,6 +45,7 @@ export default function Skills() {
                     <li>{element}</li>
                   ))}
                 </ul>
+                <div className="flip">Flip</div>
               </div>
               <div class="flip-card-back">
                 <p class="title">DevOps</p>
@@ -77,6 +79,8 @@ export default function Skills() {
                     <li>{element}</li>
                   ))}
                 </ul>
+                <div className="flip">Flip</div>
+
               </div>
               <div class="flip-card-back">
                 <p class="title">Want to know more</p>

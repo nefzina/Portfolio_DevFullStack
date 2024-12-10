@@ -1,4 +1,4 @@
-import inProgress from "../../public/assets/work-in-progress.png";
+import inProgress from "/assets/work-in-progress.png?url";
 import "../sass/project.scss";
 
 export default function Project({project}) {

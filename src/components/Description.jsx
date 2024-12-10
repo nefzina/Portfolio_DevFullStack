@@ -1,11 +1,13 @@
 import { Link } from "react-scroll";
-import Pdf from "../../public/assets/AmaniNEFZI_Dev_FullStack_2024.pdf";
-import profilePic from "../../public/assets/pic2.png";
+import ParticlesContainer from "./ParticlesContainer";
+import Pdf from "/assets/AmaniNEFZI_Dev_FullStack_2024.pdf?url";
+import profilePic from "/assets/pic2.png?url";
 import "../sass/description.scss";
 
 export default function Description() {
   return (
     <div className="descriptionBg">
+      <ParticlesContainer/>
       <div className="description">
         <div className="titleWrapper">
           <p className="firstLine">Hi, my name is</p>
