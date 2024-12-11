@@ -5,7 +5,7 @@ export default function ProjectsSection() {
   return (
     <div className="projectsBg">
       <div className="projectsContainer">
-        <h2 className="section">Best work</h2>
+        <h2 className="sectionTitle">Best work</h2>
         <div className="wrapper">
           {projects.map((project) => (
             <Project key={project.title} project={project} />
