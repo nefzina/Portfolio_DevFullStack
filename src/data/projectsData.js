@@ -16,6 +16,7 @@ export const projects = [
       "Docker",
     ],
     imgName: "webook_desktop.png",
+    link: "",
   },
 
   {
@@ -24,6 +25,7 @@ export const projects = [
       "Website to manipulate data and graphs with a touch devices. It is a board that allows to select, move and combine data to create graphs",
     tools: ["React", "Node.js", "GraphQL", "prisma", "Scss", "MongoDB"],
     imgName: "dynamic_charts.png",
+    link: "",
   },
 
   {
@@ -32,6 +34,7 @@ export const projects = [
       "An online clothing store, responsive, designed with a clean, user-friendly interface.",
     tools: ["React", "Node.js", "Express.js", "Scss", "MySQL"],
     imgName: "comfhood_iPad_Air.png",
+    link: "https://github.com/nefzina/ComfHood",
   },
 ];
 
